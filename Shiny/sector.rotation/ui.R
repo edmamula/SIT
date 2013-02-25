@@ -1,4 +1,3 @@
-
 # Define UI for application that plots random distributions 
 shinyUI(pageWithSidebar(
 
@@ -27,7 +26,7 @@ shinyUI(pageWithSidebar(
 				plotOutput("strategyPlot", height="100%"),
 				br(),
 				tableOutput("sidebysideTable"),
-				h4("Annual Perfromance"),
+				h4("Annual Performance"),
 				tableOutput("annualTable"),
 				h4("Transition Map"),
 				plotOutput("transitionPlot", height="100%"),
