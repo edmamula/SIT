@@ -1,4 +1,3 @@
-
 # Define server
 shinyServer(function(input, output) {
 
@@ -22,7 +21,7 @@ shinyServer(function(input, output) {
   			data[[symbol]] = adjustOHLC(symbol_env[[symbol]], use.Adjusted=T)  			
   		}
   			  				
-  		bt.prep(data, align='keep.all', dates='2000::')
+  		bt.prep(data, align='keep.all', dates='2007::')
 		data		
 	})
   	
