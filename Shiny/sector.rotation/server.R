@@ -16,7 +16,7 @@ shinyServer(function(input, output) {
   		for(symbol in getStocks() ) {
   			if (is.null(symbol_env[[symbol]]))
 			tryCatch({
-				symbol_env[[symbol]] = getSymbols(symbol, from='1970-01-01', src='yahoo', auto.assign = FALSE)
+				symbol_env[[symbol]] = getSymbols(symbol, from='1970-01-01', src='google', auto.assign = FALSE)
 			}, error = function(e) { stop(paste('Problem getting prices for',symbol)) })
   			data[[symbol]] = adjustOHLC(symbol_env[[symbol]], use.Adjusted=T)  			
   		}
